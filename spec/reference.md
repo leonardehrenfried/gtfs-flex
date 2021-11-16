@@ -68,8 +68,8 @@ In order for a trip planner to provide a user with information about how to requ
 | &emsp;\-&nbsp;`properties` | **Required** | Object | Location property keys. |
 | &emsp;&emsp;\-&nbsp;`stop_name` | Optional | String | Indicates the name of the location as displayed to riders. |
 | &emsp;&emsp;\-&nbsp;`stop_desc` | Optional | String | Meaningful description of the location to help orient riders. |
-| &emsp;&emsp;\-&nbsp;`zone_id` | **Conditionally Required** | String | Identifies the fare zone for a stop.<br><br>Conditionally required:<br>- **Required** if `fare_rules.txt` is defined.<br>- Optional otherwise.|
-| &emsp;&emsp;\-&nbsp;`stop_url` | Optional | URL |  URL of a web page about the location.<br><br>If provided, the URL should be different from the `agency.agency_url` and the `routes.route_url` field values. |
+| &emsp;&emsp;\-&nbsp;`zone_id`   | **Conditionally Required** | String | Identifies the fare zone for a stop.<br><br>Conditionally required:<br>- **Required** if `fare_rules.txt` is defined.<br>- Optional otherwise.|
+| &emsp;&emsp;\-&nbsp;`stop_url`  | Optional | URL |  URL of a web page about the location.<br><br>If provided, the URL should be different from the `agency.agency_url` and the `routes.route_url` field values. |
 | &emsp;\-&nbsp;`geometry` | **Required** | Object | Geometry of the location. |
 | &emsp;&emsp;\-&nbsp;`type` | **Required** | String | Must be of type:<br>-&nbsp;`"Point"`<br>-&nbsp;`"MultiPoint"`<br>-&nbsp;`"Linestring"`<br>-&nbsp;`"MutiLineString"`<br>-&nbsp;`"Polygon"`<br>-&nbsp;`"MultiPolygon"` |
 | &emsp;&emsp;\-&nbsp;`coordinates` | **Required** | Array | Geographic coordinates (latitude and longitude) defining the geometry of the location. |
